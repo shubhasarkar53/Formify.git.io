@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formify - The Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Formify</h1>
+    </header>
+    <main>
+        <section class="form-wrapper">
+            <!-- Input type selection -->
+            <label for="inputTypes">Select Input Type:</label>
+            <select name="inputTypes" id="inputTypes">
+                <option value="text">Select Type</option>
+                <option value="text">Text Field</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="radio">Radio</option>
+            </select>
+            
+            <!-- Input label -->
+             
+             
+            <div id="text-label-wrapper" style="display: none">
+                <label for="inputLabel">Input Label:</label>
+                <input type="text" id="inputLabel" placeholder="Enter label here">
+            </div>
+         
+    
+
+            <!-- for radio -->
+              
+              
+            <div id="radio-options" style="display: none">
+                <label for="inputQuestion">Input Question:</label>
+                <input type="text" id="inputQuestion" placeholder="Enter Question here">
+                <label for="optionA">Option A:</label>
+                <input type="text" id="optionA" placeholder="Enter option A">
+                <label for="optionB">Option B:</label>
+                <input type="text" id="optionB" placeholder="Enter option B">
+                <label for="optionC">Option C:</label>
+                <input type="text" id="optionC" placeholder="Enter option C">
+                <label for="optionC">Option D:</label>
+                <input type="text" id="optionD" placeholder="Enter option D">
+            </div>
+
+
+
+
+            <!-- Button to add to preview -->
+              
+              
+            <button id="addInput">Add to Form</button>
+        </section>
+    
+        <section class="form-preview">
+            <h3>Form Preview:</h3>
+            <form id="formPreview"></form>
+        </section>
+    </main>
+    
+    <footer>
+        Made With 🧡 by Shubha.
+    </footer>
+</body>
+</html>
